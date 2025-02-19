@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overscroll-behavior-y: none;
+  background: #363636;
+  background: -webkit-radial-gradient(top left, #363636, #090909);
+  background: -moz-radial-gradient(top left, #363636, #090909);
+  background: radial-gradient(to bottom right, #363636, #090909);
+}
+
+
+
+
+/* CUSTOM STYLE */
+.menu {
+  position: relative;
+}
+
+.menu::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  background: #E5E6E585;
+  transition: width 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
+}
+
+.menu:hover::after {
+  width: 100%;
+}
+
+.menu-active::after {
+ content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  background: #E5E6E585;
+}
+
