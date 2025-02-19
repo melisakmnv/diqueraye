@@ -13,36 +13,71 @@ body {
   background: radial-gradient(to bottom right, #363636, #090909);
 }
 
-
-
-
 /* CUSTOM STYLE */
-.menu {
+.nav_menu {
   position: relative;
 }
 
-.menu::after {
+.nav_menu::after {
   content: "";
   position: absolute;
   height: 2px;
   left: 0;
   bottom: -4px;
   width: 0;
-  background: #E5E6E585;
+  background: #e5e6e585;
   transition: width 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
 }
 
-.menu:hover::after {
+.nav_menu:hover::after {
   width: 100%;
 }
 
-.menu-active::after {
- content: "";
+.nav_menu-active::after {
+  content: "";
   position: absolute;
   height: 2px;
   left: 0;
   bottom: -4px;
   width: 100%;
-  background: #E5E6E585;
+  background: #e5e6e585;
+}
+
+.game_menu {
+  position: relative;
+}
+
+.game_menu:hover {
+    color: rgb(226, 224, 204);
+}
+
+.game_menu::after, .game_menu::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #ffffff;
+}
+
+.game_menu:before {
+  left: -2.5px;
+}
+
+.game_menu::after {
+  right: 2.5px;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.game_menu:hover:before {
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.game_menu:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 

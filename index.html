@@ -88,17 +88,17 @@
             </div>
             <ul class="flex gap-8 font-medium text-base tracking-widest font-hero_section_font text-[#E5E6E585]">
                 <li class="">
-                    <a href="#" class="menu menu-active">
+                    <a href="#" class="nav_menu nav_menu-active">
                         le jeu
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" class="menu">
+                    <a href="#" class="nav_menu">
                         boîtes à son
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" class="menu">
+                    <a href="#" class="nav_menu">
                         contact
                     </a>
                 </li>
@@ -131,10 +131,39 @@
                 Un jeu, des <span class="inline-block -scale-x-[1]">énigmes</span> et de l'arrachage de cheveux<br> à
                 en devenir chauve
             </h2>
-            <button
-                class="group relative border-[3px] mx-auto rounded-lg px-16 py-3 font-hero_section_font text-zinc-300 text-md tracking-widest uppercase xl:ml-0 transition-all duration-300 hover:animate-pulseShadow hover:bg-[#ffffff15]">
+            <!-- MENU TOGGLE -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <label for="menu-toggle"
+                class="group relative cursor-pointer border-[3px] mx-auto rounded-lg px-16 py-3 font-hero_section_font text-zinc-300 text-md tracking-widest uppercase xl:ml-0 transition-all duration-300 hover:animate-pulseShadow hover:bg-[#ffffff15]">
                 Jouer
-            </button>
+            </label>
+
+            <!-- MENU MODAL -->
+            <div id="menu"
+                class="hidden peer-checked:flex peer-checked:pointer-events-auto transition-all duration-300 ease-in-out fixed z-50 inset-0 bg-[#000] bg-opacity-50 backdrop-blur-sm items-center justify-center">
+
+                <div class="bg-black bg-opacity-80 border border-[#FAFAFA] w-auto relative">
+
+                    <div class="absolute right-0 top-0 flex justify-end items-center">
+                        <label for="menu-toggle" class="cursor-pointer border hover:bg-[#ffffff25]">
+                            <img class="size-[3vh]" src="assets/icons/icon_close.png" alt="Close">
+                        </label>
+                    </div>
+
+                    <ul class="uppercase text-white text-4xl p-[4vh] flex flex-col gap-4">
+                        <li >
+                            <a href="" class="game_menu">Nouvelle partie</a>
+                        </li>
+                        <li>
+                            <a href="" class="game_menu">Continuer</a>
+                        </li>
+                        <li>
+                            <a href="" class="game_menu">Tutorial</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
 
             <div class="hidden xl:block xl:h-[130px]"></div>
         </div>
