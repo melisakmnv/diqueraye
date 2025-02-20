@@ -16,6 +16,7 @@ body {
 /* CUSTOM STYLE */
 .nav_menu {
   position: relative;
+  z-index: 10;
 }
 
 .nav_menu::after {
