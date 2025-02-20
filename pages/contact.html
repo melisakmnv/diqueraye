@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/global.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anonymous+Pro&family=Roboto:wght@300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- TAILWIND CDN -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "640px",
+                    md: "768px",
+                    lg: "960px",
+                    xl: "1280px"
+                },
+                extend: {
+                    height: {
+                        navbar: "4.5rem",
+                        page: "calc(100vh - 4.5rem)",
+                        sidebarH: "calc(100vh - 4.5rem - 3rem)",
+                    },
+
+                    fontFamily: {
+                        hero_section_font: ['Bebas Neue', 'serif'],
+                        nav_section_font: ['Raleway', 'serif'],
+                        footer_section_font: ["Anonymous Pro", "serif"],
+                        contact_input_section_font: ["Anonymous Pro", "serif"],
+                        game_section_font: "",
+                    },
+                    fontSize: {
+                        // xxs: ['10px', '15px'],
+                        // xs: ['12px', '18px'],
+                        sm: ['0.875rem', '22px'],
+                        base: ['1rem', '1.5rem'],
+                        md: ['1.3rem', '32px'],
+                        lg: ['1.5rem', '2.25rem'],
+                        xl: ['1.7rem', '34px'],
+                        '2xl': ['2rem', '30px'],
+                        '4xl': ['6vw', '6vw']
+                    },
+
+                    animation: {
+                        'spin': 'spin 4s linear infinite',
+                        'spin-slow': 'spin 1s linear',
+                        'pulseShadow': 'pulseShadow 1s cubic-bezier(0.5, 0.5, 0, 1)',
+                    },
+                    keyframes: {
+                        pulseShadow: {
+                            '0%': { boxShadow: '0 0 0 0 rgba(255, 255, 255, 0.4)' },
+                            '100%': { boxShadow: '0 0 0 15px transparent' },
+                        },
+                    },
+                },
+
+            }
+        }
+
+    </script>
+    <title>Contact</title>
+</head>
+<body class="flex flex-col min-h-screen max-w-screen px-8 md:px-16">
+    <header class="flex items-center py-4 mb-10 md:py-6 md:mb-6 lg:mb-0">
+        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase text-zinc-300 ">
+            <div>
+                <a href="../index.html"
+                    class="flex items-center gap-4 font-hero_section_font text-lg tracking-[0.125rem]">
+                    <div id="logo" class="w-[50px]">
+                        <img src="../assets/images/micro-logo.png" alt="Logo">
+                    </div>
+                    <p>DisqueRaye.fr</p>
+                </a>
+            </div>
+            <ul class="flex gap-8 font-medium text-base tracking-widest font-hero_section_font text-[#FFF]">
+                <li class="">
+                    <a href="#" class="nav_menu">
+                        le jeu
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="nav_menu">
+                        boîtes à son
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="nav_menu nav_menu-active">
+                        contact
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="relative flex-grow flex flex-col items-center justify-center">
+
+        <h1 class="font-hero_section_font text-2xl md:text-4xl text-zinc-300 text-center tracking-widest ">
+            <div id="typed-strings">
+                <span>Contacter .</span>
+            </div>
+            <span id="typed"></span>
+        </h1>
+
+        <form action="" class="flex flex-col gap-2 md:gap-6 w-full lg:w-2/3 xl:w-1/2 mx-auto h-auto mt-10 mb-10 md:mb-0">
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-0 md:gap-4 text-white">
+                <div class="md:min-w-[150px] px-2">
+                    <label for="username"
+                        class="tracking-widest flex-1 uppercase font-hero_section_font text-base md:text-md">
+                        Votre nom :
+                    </label>
+                </div>
+                <input id="username" type="text" autofocus
+                    class="w-full bg-transparent border-[2px] rounded-lg focus:outline-none px-6 py-2 text-base md:text-md font-contact_input_section_font">
+            </div>
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-0 md:gap-4 text-white">
+                <div class="md:min-w-[150px] px-2">
+                    <label for="email"
+                        class="tracking-widest flex-1 uppercase font-hero_section_font text-base md:text-md">
+                        Votre e-mail :
+                    </label>
+                </div>
+                <input id="email" type="text" autofocus
+                    class="w-full bg-transparent border-[2px] rounded-lg focus:outline-none px-6 py-2 text-base md:text-md font-contact_input_section_font">
+            </div>
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-0 md:gap-4 text-white">
+                <div class="md:min-w-[150px] px-2">
+                    <label for="subject"
+                        class="tracking-widest flex-1 uppercase font-hero_section_font text-base md:text-md">
+                        Votre sujet :
+                    </label>
+                </div>
+                <input id="subject" type="text" autofocus
+                    class="w-full bg-transparent border-[2px] rounded-lg focus:outline-none px-6 py-2 text-base md:text-md font-contact_input_section_font">
+            </div>
+            <div class="h-[12px] md:hidden"></div>
+            <div>
+                <textarea
+                    class="bg-transparent border-[2px] rounded-lg w-full text-white focus:outline-none px-6 py-2 text-base md:text-md  h-[200px] resize-none font-contact_input_section_font"></textarea>
+            </div>
+            <div class="h-[8px] md:hidden"></div>
+            <button type="submit"
+                class="group relative cursor-pointer border-[3px] mx-auto rounded-lg px-16 py-3 font-hero_section_font text-zinc-300 text-base md:text-md tracking-widest uppercase xl:ml-0 transition-all duration-300 hover:animate-pulseShadow hover:bg-[#ffffff15]">
+                Envoyer
+            </button>
+        </form>
+
+
+    </main>
+
+    <footer
+        class="flex items-center flex-col md:flex-row-reverse lg:justify-between gap-4 text-zinc-300 text-sm md:text-base font-footer_section_font py-3 mb-4 md:mb-2">
+        <ul class="flex-1 flex justify-end gap-4">
+            <li>
+                <a href="#">
+                    <img class="size-8" src="../assets/icons/icon_facebook.png" alt="Facebook Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="size-8" src="../assets/icons/icon_twitter.png" alt="Twitter Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="size-8" src="../assets/icons/icon_discord.png" alt="Discord Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="size-8" src="../assets/icons/icon_instagram.png" alt="Instagram Logo">
+                </a>
+            </li>
+        </ul>
+        <p class="flex-2 text-center text-sm uppercase">&copy; Copyright 2023 DisqueRaye.fr | <span> <a
+                    class="text-gray-500" href="#">Mentions légales</a></span> | By Allen Shamal</p>
+        <div class="hidden lg:block md:flex-1"></div>
+    </footer>
+
+    <script src="../index.js"></script>
+</body>
+</html>
+
+
+<!-- DESKTOP VERSION -->
+<!-- 
+
+
+    <div class="flex items-center gap-4 text-white">
+                <div class="min-w-[150px] px-2">
+                    <label for="username" class="tracking-widest flex-1 uppercase font-hero_section_font text-md">Votre
+                        nom
+                        :</label>
+                </div>
+                <input id="username" type="text" autofocus
+                    class="flex-grow bg-transparent border-[2px] rounded-lg focus:outline-none px-6 py-2 text-md font-contact_input_section_font">
+            </div>
+            <div class="flex items-center gap-4 text-white">
+                <div class="min-w-[150px] px-2">
+                    <label for="email" class="tracking-widest flex-1 uppercase font-hero_section_font text-md">Votre
+                        E-mail
+                        :</label>
+                </div>
+                <input id="email" type="text" autofocus
+                    class="flex-grow bg-transparent border-[2px] rounded-lg focus:outline-none px-6 py-2 text-md font-contact_input_section_font">
+            </div>
+
+            <div class="flex items-center gap-4 text-white">
+                <div class="min-w-[150px] px-2">
+                    <label for="subject" class="tracking-widest flex-1 uppercase font-hero_section_font text-md">Sujet
+                        :</label>
+                </div>
+                <input id="subject" type="text" autofocus
+                    class="flex-grow bg-transparent border-[2px] rounded-lg focus:outline-none px-6 py-2 text-md font-contact_input_section_font">
+            </div>
+
+            <div>
+                <textarea
+                    class="bg-transparent border-[2px] rounded-lg w-full text-white focus:outline-none px-6 py-2 text-md h-[200px] resize-none font-contact_input_section_font"></textarea>
+            </div>
+
+ -->

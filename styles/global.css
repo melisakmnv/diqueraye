@@ -25,7 +25,7 @@ body {
   left: 0;
   bottom: -4px;
   width: 0;
-  background: #e5e6e585;
+  background: #FFF;
   transition: width 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
 }
 
@@ -40,7 +40,7 @@ body {
   left: 0;
   bottom: -4px;
   width: 100%;
-  background: #e5e6e585;
+  background: #FFF;
 }
 
 .game_menu {
