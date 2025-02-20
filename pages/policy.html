@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/global.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anonymous+Pro&family=Roboto:wght@300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- TAILWIND CDN -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "640px",
+                    md: "768px",
+                    lg: "960px",
+                    xl: "1280px"
+                },
+                extend: {
+                    height: {
+                        navbar: "4.5rem",
+                        page: "calc(100vh - 4.5rem)",
+                        sidebarH: "calc(100vh - 4.5rem - 3rem)",
+                    },
+
+                    fontFamily: {
+                        hero_section_font: ['Bebas Neue', 'serif'],
+                        nav_section_font: ['Raleway', 'serif'],
+                        footer_section_font: ["Anonymous Pro", "serif"],
+                        contact_input_section_font: ["Anonymous Pro", "serif"],
+                        game_section_font: "",
+                    },
+                    fontSize: {
+                        // xxs: ['10px', '15px'],
+                        // xs: ['12px', '18px'],
+                        sm: ['0.875rem', '22px'],
+                        base: ['1rem', '1.5rem'],
+                        md: ['1.3rem', '32px'],
+                        lg: ['1.5rem', '2.25rem'],
+                        xl: ['1.7rem', '34px'],
+                        '2xl': ['2rem', '30px'],
+                        '4xl': ['6vw', '6vw']
+                    },
+
+                    animation: {
+                        'spin': 'spin 4s linear infinite',
+                        'spin-slow': 'spin 1s linear',
+                        'pulseShadow': 'pulseShadow 1s cubic-bezier(0.5, 0.5, 0, 1)',
+                    },
+                    keyframes: {
+                        pulseShadow: {
+                            '0%': { boxShadow: '0 0 0 0 rgba(255, 255, 255, 0.4)' },
+                            '100%': { boxShadow: '0 0 0 15px transparent' },
+                        },
+                    },
+                },
+
+            }
+        }
+
+    </script>
+    <title>Mentions Légales</title>
+</head>
+
+<body class="flex flex-col min-h-screen max-w-screen px-8 md:px-16">
+
+    <header class="flex items-center py-4 mb-10 md:py-6 md:mb-6 lg:mb-0">
+        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase text-zinc-300 ">
+            <div>
+                <a href="./index.html"
+                    class="flex items-center gap-4 font-hero_section_font text-lg tracking-[0.125rem]">
+                    <div id="logo" class="w-[50px]">
+                        <img src="../assets/images/micro-logo.png" alt="Logo">
+                    </div>
+                    <p>DisqueRaye.fr</p>
+                </a>
+            </div>
+            <ul
+                class="flex gap-8 font-medium text-base tracking-widest font-hero_section_font text-[#FFF] relative z-10">
+                <li>
+                    <a href="#" class="nav_menu">
+                        le jeu
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav_menu z-10">
+                        boîtes à son
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="nav_menu">
+                        contact
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="relative flex-grow flex items-center justify-center">
+        <div class="flex flex-col  w-full xl:w-2/3">
+            <h1 class="uppercase text-white font-hero_section_font text-center text-4xl tracking-wider mb-4">
+                Mentions Légales
+            </h1>
+            <div class="h-[16px]"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap gap-4 md:gap-7 lg:gap-8">
+                <div class="flex flex-col gap-3 xl:gap-4">
+                    <h2 class="uppercase text-zinc-200 font-footer_section_font text-base lg:text-md font-medium">
+                        1.Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="font-footer_section_font text-sm text-stone-200 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui hic necessitatibus
+                        corporis fugit. Possimus incidunt illo vel nostrum facere minima consequatur ea. Cupiditate
+                        accusantium et in porro voluptas harum.
+                    </p>
+                    <p class="font-footer_section_font text-sm text-stone-200 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui hic necessitatibus
+                        corporis fugit. Possimus incidunt illo vel nostrum facere minima consequatur ea. Cupiditate
+                        accusantium et in porro voluptas harum.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-3 xl:gap-4">
+                    <h2 class="uppercase text-zinc-200 font-footer_section_font text-base lg:text-md font-medium">
+                        2.Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="font-footer_section_font text-sm text-stone-200 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui hic necessitatibus
+                        corporis fugit. Possimus incidunt illo vel nostrum facere minima consequatur ea. Cupiditate
+                        accusantium et in porro voluptas harum.
+                    </p>
+                    <p class="font-footer_section_font text-sm text-stone-200 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui hic necessitatibus
+                        corporis fugit. Possimus incidunt illo vel nostrum facere minima consequatur ea. Cupiditate
+                        accusantium et in porro voluptas harum.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-3 xl:gap-4">
+                    <h2 class="uppercase text-zinc-200 font-footer_section_font text-base lg:text-md font-medium">
+                        3.Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="font-footer_section_font text-sm text-stone-200 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui hic necessitatibus
+                        corporis fugit. Possimus incidunt illo vel nostrum facere minima consequatur ea. Cupiditate
+                        accusantium et in porro voluptas harum.
+                    </p>
+                    <p class="font-footer_section_font text-sm text-stone-200 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui hic necessitatibus
+                        corporis fugit. Possimus incidunt illo vel nostrum facere minima consequatur ea. Cupiditate
+                        accusantium et in porro voluptas harum.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-3 xl:gap-4">
+                    <h2 class="uppercase text-zinc-200 font-footer_section_font text-base lg:text-md font-medium">
+                        4.Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="font-footer_section_font text-sm text-stone-200 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui hic necessitatibus
+                        corporis fugit. Possimus incidunt illo vel nostrum facere minima consequatur ea. Cupiditate
+                        accusantium et in porro voluptas harum.
+                    </p>
+                    <p class="font-footer_section_font text-sm text-stone-200 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui hic necessitatibus
+                        corporis fugit. Possimus incidunt illo vel nostrum facere minima consequatur ea. Cupiditate
+                        accusantium et in porro voluptas harum.
+                    </p>
+                </div>
+            </div>
+            <div class="h-[16px]"></div>
+        </div>
+    </main>
+
+    <footer
+        class="flex items-center flex-col md:flex-row-reverse lg:justify-between gap-4 text-zinc-200 text-sm md:text-base font-footer_section_font py-4 mb-4 md:mb-2">
+        <ul class="flex-1 flex justify-end gap-4">
+            <li>
+                <a href="#">
+                    <img class="size-8" src="../assets/icons/icon_facebook.png" alt="Facebook Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="size-8" src="../assets/icons/icon_twitter.png" alt="Twitter Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="size-8" src="../assets/icons/icon_discord.png" alt="Discord Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="size-8" src="../assets/icons/icon_instagram.png" alt="Instagram Logo">
+                </a>
+            </li>
+        </ul>
+        <p class="flex-2 text-center text-sm uppercase">&copy; Copyright 2023 DisqueRaye.fr | <span> <a
+                    class="text-gray-500" href="#">Mentions légales</a></span> | By Allen Shamal</p>
+        <div class="hidden lg:block md:flex-1"></div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
