@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overscroll-behavior-y: none;
+  overscroll-behavior-y: none;
+  background: #363636;
+  background: -webkit-radial-gradient(top left, #363636, #090909);
+  background: -moz-radial-gradient(top left, #363636, #090909);
+  background: radial-gradient(to bottom right, #363636, #090909);
+}
+
+/**
+ * Slider Instance
+ */
+
+.swiper {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/**
+ * Slider Navigation
+ */
+
+.slider-nav__item {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  pointer-events: auto; /* Trigger */
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+/* SLIDER ITEM */
+
+.disque-slider-item__header {
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  transition: top 0.8s ease-in;
+}
+
+.disque-slider-item__header-inner {
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.disque-slider__slide:not(.swiper-slide-active) .disque-slider-item__header {
+  top: 120px;
+}

@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anonymous+Pro&family=Roboto:wght@300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- TYPED  -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- TAILWIND CDN -->
@@ -27,12 +28,6 @@
                     xl: "1280px"
                 },
                 extend: {
-                    height: {
-                        navbar: "4.5rem",
-                        page: "calc(100vh - 4.5rem)",
-                        sidebarH: "calc(100vh - 4.5rem - 3rem)",
-                    },
-
                     fontFamily: {
                         hero_section_font: ['Bebas Neue', 'serif'],
                         nav_section_font: ['Raleway', 'serif'],
@@ -71,6 +66,7 @@
     </script>
     <title>Contact</title>
 </head>
+
 <body class="flex flex-col min-h-screen max-w-screen px-8 md:px-16">
     <header class="flex items-center py-4 mb-10 md:py-6 md:mb-6 lg:mb-0">
         <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase text-zinc-300 ">
@@ -90,7 +86,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" class="nav_menu">
+                    <a href="../pages/carousel.html" class="nav_menu">
                         boîtes à son
                     </a>
                 </li>
@@ -113,7 +109,8 @@
             <span id="typed"></span>
         </h1>
 
-        <form action="" class="flex flex-col gap-2 md:gap-6 w-full lg:w-2/3 xl:w-1/2 mx-auto h-auto mt-10 mb-10 md:mb-0">
+        <form action=""
+            class="flex flex-col gap-2 md:gap-6 w-full lg:w-2/3 xl:w-1/2 mx-auto h-auto mt-10 mb-10 md:mb-0">
             <div class="flex flex-col md:flex-row items-start md:items-center gap-0 md:gap-4 text-white">
                 <div class="md:min-w-[150px] px-2">
                     <label for="username"
@@ -188,6 +185,7 @@
         <div class="hidden lg:block md:flex-1"></div>
     </footer>
 
-    <script src="../index.js"></script>
+    <script src="../js/logo-spin.js"></script>
+    <script src="../js/text-type.js"></script>
 </body>
 </html>
