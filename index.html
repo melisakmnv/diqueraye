@@ -38,7 +38,7 @@
                     },
                     fontSize: {
                         // xxs: ['10px', '15px'],
-                        // xs: ['12px', '18px'],
+                        xs: ['12px', '18px'],
                         sm: ['0.875rem', '22px'],
                         base: ['1rem', '1.5rem'],
                         md: ['1.3rem', '32px'],
@@ -162,36 +162,36 @@
 
             <div class="hidden xl:block xl:h-[130px]"></div>
         </div>
-        <div class="hidden xl:flex xl:flex-1 justify-end">
-            <img src="./assets/images/home/home-vinyl.png" alt="Vinyl" class="xl:w-[90%] animate-spin">
+        <div class="hidden xl:flex xl:flex-1 justify-end overflow-hidden">
+            <img src="./assets/images/home/home-vinyl.png" alt="Vinyl" class="xl:max-h-[70vh] overflow-hidden animate-spin">
         </div>
     </main>
 
     <footer
-        class="flex items-center flex-col md:flex-row-reverse lg:justify-between gap-4 text-zinc-300 text-sm md:text-base font-footer_section_font py-4 mb-4 md:mb-2">
+        class="flex items-center flex-col xl:flex-row-reverse xl:justify-between gap-4 text-zinc-300 text-sm md:text-base font-footer_section_font py-4 mb-4 md:mb-2">
         <ul class="flex-1 flex justify-end gap-4">
             <li>
                 <a href="#">
-                    <img class="size-8" src="./assets/icons/icon_facebook.png" alt="Facebook Logo">
+                    <img class="size-6 lg:size-8" src="./assets/icons/icon_facebook.png" alt="Facebook Logo">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img class="size-8" src="./assets/icons/icon_twitter.png" alt="Twitter Logo">
+                    <img class="size-6 lg:size-8" src="./assets/icons/icon_twitter.png" alt="Twitter Logo">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img class="size-8" src="./assets/icons/icon_discord.png" alt="Discord Logo">
+                    <img class="size-6 lg:size-8" src="./assets/icons/icon_discord.png" alt="Discord Logo">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img class="size-8" src="./assets/icons/icon_instagram.png" alt="Instagram Logo">
+                    <img class="size-6 lg:size-8" src="./assets/icons/icon_instagram.png" alt="Instagram Logo">
                 </a>
             </li>
         </ul>
-        <p class="flex-2 text-center text-sm uppercase">&copy; Copyright 2023 DisqueRaye.fr | <span> <a
+        <p class="flex-2 text-center text-xs lg:text-sm uppercase">&copy; Copyright 2023 DisqueRaye.fr <br class="md:hidden" /> | <span> <a
                     class="text-gray-500" href="./pages/policy.html">Mentions légales</a></span> | By Allen Shamal</p>
         <div class="hidden lg:block md:flex-1"></div>
     </footer>

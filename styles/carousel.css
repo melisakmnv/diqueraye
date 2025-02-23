@@ -52,4 +52,10 @@ body {
 
 .disque-slider__slide:not(.swiper-slide-active) .disque-slider-item__header {
   top: 120px;
+  /* filter: blur(4px); BLUR EFFECT ON DISQUE */
+} 
+
+/* BLUR EFFECT ON COVER */
+.disque-slider__slide:not(.swiper-slide-active) .disque-slider-item__cover {
+  /* filter: blur(4px); */
 }
