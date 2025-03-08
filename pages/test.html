@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/carousel.css">
+    <link rel="stylesheet" href="../styles/test.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,12 +50,12 @@
                     animation: {
                         'spin': 'spin 4s linear infinite',
                         'spin-slow': 'spin 1s linear',
-                        'pulseShadow': 'pulseShadow 1.5s cubic-bezier(0.5, 0.5, 0, 1)',
+                        'pulseShadow': 'pulseShadow 1s cubic-bezier(0.5, 0.5, 0, 1)',
                     },
                     keyframes: {
                         pulseShadow: {
-                            '0%': { filter: 'drop-shadow(0 0 0px rgba(255, 255, 255, 1))' },
-                            '100%': { filter: 'drop-shadow(0 0 20px rgba(255, 255, 255, 0.7))' },
+                            '0%': { boxShadow: '0 0 0 0 rgba(255, 255, 255, 0.4)' },
+                            '100%': { boxShadow: '0 0 0 15px transparent' },
                         },
                     },
                 },
@@ -105,11 +104,10 @@
         <section class="container w-full overflow-hidden">
             <!-- SLIDER NAVIGATION -->
             <div tabindex="0" class="slider-nav__item slider-nav__item_prev w-12 absolute z-10 left-20 top-1/2 transform -translate-y-1/2
-                                        ">
+                            ">
                 <!-- SVG ICON WITH TRIANGLE HOVER PULSE EFFECT -->
                 <div class="group inline-block ">
-                    <svg width="52" height="56" viewBox="0 0 52 56" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        class="transition-all scale-200  group-hover:animate-pulseShadow group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]">
+                    <svg width="52" height="56" viewBox="0 0 52 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all scale-200  group-hover:animate-pulseShadow group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]">
                         <path
                             d="M6.09358 33.9466L6.09921 33.95L36.0904 52.1429L36.0905 52.143C38.9646 53.8866 42.3737 53.8563 45.0738 52.5869C47.7704 51.3192 49.5 48.968 49.5 46.1917V9.80827C49.5 7.03196 47.7704 4.68081 45.0738 3.41308C42.3737 2.14373 38.9646 2.11338 36.0905 3.85704L36.0904 3.85712L6.09922 22.05L6.09357 22.0534C4.94867 22.7438 4.04065 23.6572 3.42515 24.6937C2.81073 25.7285 2.5 26.8632 2.5 28C2.5 29.1368 2.81073 30.2715 3.42515 31.3063C4.04065 32.3428 4.94867 33.2562 6.09358 33.9466Z"
                             stroke="white" stroke-width="5" />
@@ -120,9 +118,8 @@
                 class="slider-nav__item slider-nav__item_next w-12 absolute z-10 right-20 top-1/2 transform -translate-y-1/2">
                 <!-- SVG ICON WITH TRIANGLE HOVER PULSE EFFECT -->
                 <div class="group inline-block ">
-                    <svg width="52" height="56" viewBox="0 0 52 56" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        class="transition-all scale-200  group-hover:animate-pulseShadow 
-                                                group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]">
+                    <svg width="52" height="56" viewBox="0 0 52 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all scale-200  group-hover:animate-pulseShadow 
+                                    group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]">
                         <path
                             d="M45.9064 33.9466L45.9008 33.95L15.9096 52.1429L15.9095 52.143C13.0354 53.8866 9.6263 53.8563 6.92624 52.5869C4.22964 51.3192 2.5 48.968 2.5 46.1917V9.80827C2.5 7.03196 4.22964 4.68081 6.92624 3.41308C9.6263 2.14373 13.0354 2.11338 15.9095 3.85704L15.9096 3.85712L45.9008 22.05L45.9064 22.0534C47.0513 22.7438 47.9593 23.6572 48.5749 24.6937C49.1893 25.7285 49.5 26.8632 49.5 28C49.5 29.1368 49.1893 30.2715 48.5749 31.3063C47.9593 32.3428 47.0513 33.2562 45.9064 33.9466Z"
                             stroke="white" stroke-width="5" />
@@ -295,3 +292,37 @@
 </body>
 
 </html>
+
+
+
+<!-- 
+
+               <!-- SLIDER NAVIGATION -->
+            <div tabindex="0" class="slider-nav__item slider-nav__item_prev w-12 absolute z-10 left-20 top-1/2 transform -translate-y-1/2
+                            ">
+                <!-- SVG ICON WITH TRIANGLE HOVER PULSE EFFECT -->
+                <div class="group inline-block ">
+                    <svg width="52" height="56" viewBox="0 0 52 56" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="transition-all scale-200  group-hover:animate-pulseShadow group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]">
+                        <path
+                            d="M6.09358 33.9466L6.09921 33.95L36.0904 52.1429L36.0905 52.143C38.9646 53.8866 42.3737 53.8563 45.0738 52.5869C47.7704 51.3192 49.5 48.968 49.5 46.1917V9.80827C49.5 7.03196 47.7704 4.68081 45.0738 3.41308C42.3737 2.14373 38.9646 2.11338 36.0905 3.85704L36.0904 3.85712L6.09922 22.05L6.09357 22.0534C4.94867 22.7438 4.04065 23.6572 3.42515 24.6937C2.81073 25.7285 2.5 26.8632 2.5 28C2.5 29.1368 2.81073 30.2715 3.42515 31.3063C4.04065 32.3428 4.94867 33.2562 6.09358 33.9466Z"
+                            stroke="white" stroke-width="5" />
+                    </svg>
+                </div>
+            </div>
+            <div tabindex="0"
+                class="slider-nav__item slider-nav__item_next w-12 absolute z-10 right-20 top-1/2 transform -translate-y-1/2">
+                <!-- SVG ICON WITH TRIANGLE HOVER PULSE EFFECT -->
+                <div class="group inline-block ">
+                    <svg width="52" height="56" viewBox="0 0 52 56" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="transition-all scale-200  group-hover:animate-pulseShadow 
+                                    group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]">
+                        <path
+                            d="M45.9064 33.9466L45.9008 33.95L15.9096 52.1429L15.9095 52.143C13.0354 53.8866 9.6263 53.8563 6.92624 52.5869C4.22964 51.3192 2.5 48.968 2.5 46.1917V9.80827C2.5 7.03196 4.22964 4.68081 6.92624 3.41308C9.6263 2.14373 13.0354 2.11338 15.9095 3.85704L15.9096 3.85712L45.9008 22.05L45.9064 22.0534C47.0513 22.7438 47.9593 23.6572 48.5749 24.6937C49.1893 25.7285 49.5 26.8632 49.5 28C49.5 29.1368 49.1893 30.2715 48.5749 31.3063C47.9593 32.3428 47.0513 33.2562 45.9064 33.9466Z"
+                            stroke="white" stroke-width="5" />
+                    </svg>
+                </div>
+            </div>
+
+
+ -->
