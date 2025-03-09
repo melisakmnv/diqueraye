@@ -104,7 +104,7 @@
     <main class="flex-grow w-full">
         <section class="container w-full overflow-hidden">
             <!-- SLIDER NAVIGATION -->
-            <div tabindex="0" class="hidden lg:flex slider-nav__item slider-nav__item_prev w-12 absolute z-10 left-20 top-1/2 transform -translate-y-1/2
+            <div tabindex="0" class="hidden xl:flex slider-nav__item slider-nav__item_prev w-12 absolute z-10 left-20 top-1/2 transform -translate-y-1/2
                                         ">
                 <!-- SVG ICON WITH TRIANGLE HOVER PULSE EFFECT -->
                 <div class="group inline-block ">
@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div tabindex="0"
-                class="hidden lg:flex slider-nav__item slider-nav__item_next w-12 absolute z-10 right-20 top-1/2 transform -translate-y-1/2">
+                class="hidden xl:flex slider-nav__item slider-nav__item_next w-12 absolute z-10 right-20 top-1/2 transform -translate-y-1/2">
                 <!-- SVG ICON WITH TRIANGLE HOVER PULSE EFFECT -->
                 <div class="group inline-block ">
                     <svg width="52" height="56" viewBox="0 0 52 56" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -131,11 +131,11 @@
             </div>
 
             <!-- SLIDER -->
-            <div class="card__container py-[3rem] xxl:py-0">
+            <div class="card__container hidden xl:block py-[3rem] xxl:py-0">
                 <div class="card__content">
                     <div class="swiper-wrapper">
 
-                        <!-- SLIDE 1 -->
+                        <!-- SLIDE 1 RENE -->
                         <article class="card__article swiper-slide ">
                             <picture>
                                 <div class="xxl:w-[80%] w-full h-full mx-auto">
@@ -144,17 +144,22 @@
                                             <div class="relative">
                                                 <div
                                                     class="card__article--header absolute w-[96%] z-1 flex justify-between items-center">
-                                                    <a target="_blank" href="https://rene.disqueraye.fr/" class="w-full">
-                                                        <source media="(min-width: )" srcset="../assets/images/carousel/vinyl-disc.png">
+                                                    <a target="_blank" href="https://rene.disqueraye.fr/"
+                                                        class="w-full">
+                                                        <source media="(min-width: )"
+                                                            srcset="../assets/images/carousel/vinyl-disc.png">
 
                                                         <img class="w-full mx-auto" loading="lazy"
                                                             src="../assets/images/carousel/vinyl-disc.png" />
                                                     </a>
                                                 </div>
                                                 <a target="_blank" href="https://rene.disqueraye.fr/">
-                                                    <source media="(min-width: )" srcset="../assets/images/carousel/vinyl-disc.png">
-                                                    <img loading="lazy" class="w-full h-auto mx-auto absolute bottom-0 z-2"
-                                                        src="../assets/images/carousel/rene-pochette.png" alt="Rene Cover">
+                                                    <source media="(min-width: )"
+                                                        srcset="../assets/images/carousel/vinyl-disc.png">
+                                                    <img loading="lazy"
+                                                        class="w-full h-auto mx-auto absolute bottom-0 z-2"
+                                                        src="../assets/images/carousel/rene-pochette.png"
+                                                        alt="Rene Cover">
                                                 </a>
                                             </div>
                                         </div>
@@ -179,7 +184,8 @@
                                             </div>
                                             <a target="_blank" href="https://hooper.disqueraye.fr/">
                                                 <img loading="lazy" class="w-full h-auto mx-auto absolute bottom-0 z-2"
-                                                    src="../assets/images/carousel/hooper-pochette.png" alt="Hooper Cover">
+                                                    src="../assets/images/carousel/hooper-pochette.png"
+                                                    alt="Hooper Cover">
                                             </a>
                                         </div>
                                     </div>
@@ -203,7 +209,8 @@
                                             </div>
                                             <a target="_blank" href="https://chirac.disqueraye.fr/">
                                                 <img loading="lazy" class="w-full h-auto mx-auto absolute bottom-0 z-2"
-                                                    src="../assets/images/carousel/chirac-pochette.png" alt="Chirac Cover">
+                                                    src="../assets/images/carousel/chirac-pochette.png"
+                                                    alt="Chirac Cover">
                                             </a>
                                         </div>
                                     </div>
@@ -220,14 +227,16 @@
                                         <div class="relative">
                                             <div
                                                 class="card__article--header absolute w-[96%] z-1 flex justify-between items-center">
-                                                <a target="_blank" href="https://melenchon.disqueraye.fr" class="w-full">
+                                                <a target="_blank" href="https://melenchon.disqueraye.fr"
+                                                    class="w-full">
                                                     <img loading="lazy" class="w-full mx-auto"
                                                         src="../assets/images/carousel/vinyl-disc.png" />
                                                 </a>
                                             </div>
                                             <a target="_blank" href="https://melenchon.disqueraye.fr">
                                                 <img loading="lazy" class="w-full h-auto mx-auto absolute bottom-0 z-2"
-                                                    src="../assets/images/carousel/melenchon-pochette.png" alt="Melenchon Cover">
+                                                    src="../assets/images/carousel/melenchon-pochette.png"
+                                                    alt="Melenchon Cover">
                                             </a>
                                         </div>
                                     </div>
@@ -239,6 +248,38 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="flex xl:hidden flex-col gap-10 md:gap-24 md:my-10 mb-10">
+                <!-- RENE -->
+                <article class="md:w-full">
+                    <a target="_blank" href="https://rene.disqueraye.fr/">
+                        <img class="md:w-[80%] mx-auto" src="../assets/images/carousel/rene-pochette.png" alt="Rene Cover">
+                    </a>
+                </article>
+
+                <!-- HOOPER -->
+                <article class="md:w-full">
+                    <a target="_blank" href="https://hooper.disqueraye.fr/">
+                        <img class="md:w-[80%] mx-auto" src="../assets/images/carousel/hooper-pochette.png" alt="Hooper Cover">
+                    </a>
+                </article>
+
+                <!-- CHIRAC -->
+                <article class="md:w-full">
+                    <a target="_blank" href="https://chirac.disqueraye.fr/">
+                        <img class="md:w-[80%] mx-auto" src="../assets/images/carousel/chirac-pochette.png" alt="Chirac Cover">
+                    </a>
+                </article>
+
+                <!-- MELENCHON -->
+                <article class="md:w-full">
+                    <a target="_blank" href="https://melenchon.disqueraye.fr">
+                        <img class="md:w-[80%] mx-auto" src="../assets/images/carousel/melenchon-pochette.png" alt="Melenchon Cover">
+                    </a>
+                </article>
+            </div>
+
         </section>
     </main>
 
