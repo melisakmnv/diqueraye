@@ -79,125 +79,78 @@
 
 
 
-<main class="relative flex-grow flex flex-col h-full bg-red-200">
-    <div class="relative flex-grow flex flex-col items-center justify-center w-full h-full ">
+    <main class="relative flex-grow flex flex-col h-full bg-red-200">
+        <div class="relative flex-grow flex flex-col items-center justify-center w-full h-full ">
 
-        <!-- BUTTON SECTION -->
-        <section class="flex flex-col gap-8 absolute left-0 top-[50%] z-10">
-            <button id="flip-button" type="button" class="size-10 group">
-                <img class="object-cover transition-all scale-200  group-hover:animate-pulseShadow group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]"
-                    src="../assets/icons/icon_question.png" alt="Hint">
-            </button>
-            <button id="save-button" type="button" class="size-10 group">
-                <img class="object-cover transition-all scale-200  group-hover:animate-pulseShadow group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]"
-                    src="../assets/icons/icon_save.png" alt="Save">
-            </button>
-        </section>
+            <!-- BUTTON SECTION -->
+            <section class="flex flex-col gap-8 absolute left-0 top-[50%] z-10">
+                <button id="flip-button" type="button" class="size-10 group">
+                    <img class="object-cover transition-all scale-200  group-hover:animate-pulseShadow group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]"
+                        src="../assets/icons/icon_question.png" alt="Hint">
+                </button>
+                <button id="save-button" type="button" class="size-10 group">
+                    <img class="object-cover transition-all scale-200  group-hover:animate-pulseShadow group-hover:filter group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]"
+                        src="../assets/icons/icon_save.png" alt="Save">
+                </button>
+            </section>
 
-        <!-- CONTENT SECTION -->
-
-        <section class="w-full select-none">
-            <div class="relative w-full lg:w-[48%] xxl:w-[38%] mx-auto z-1 ">
-                <div id="flip-card" class="flex">
-                    <div class="flip-card-inner">
-
-                        <!-- COVER -->
-                        <div class="w-full relative z-10 hidden lg:block">
-                            <img class="w-full" loading="lazy" src="../assets/images/enigme/big-pochette.png"
-                                alt="Cover" />
-                        </div>
-
-                        <!-- DISK underneath the cover -->
-                        <div
-                            class="hidden lg:block absolute size-[98%] z-0 top-1/2 left-[120px] -translate-y-1/2 flex justify-between items-center">
-                            <img class="w-full mx-auto" loading="lazy" src="../assets/images/carousel/vinyl-disc.png"
-                                alt="Disk">
-                        </div>
+            <!-- CONTENT SECTION -->
 
 
-                        <!-- FRONT SIDE -->
-                        <!-- <div class="flip-card-front absolute top-0 z-10 w-full h-full p-10">
-                                <div class="flex flex-col gap-8 items-center justify-center w-full h-full">
-                                    <div class="border-[10px] border-white w-[70%]">
-                                        <img src="../assets/images/enigme/chirac-profile.png" loading="lazy"
-                                            alt="Chirac Profile">
-                                    </div>
-                                    <div class="text-center text-white font-footer_section_font">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ex ab
-                                            rerum
-                                            exercitationem similique architecto laborum quia blanditiis aperiam harum
-                                            quo
-                                            unde
-                                            voluptas
-                                        </p>
-                                    </div>
-                                    <div class="flex gap-4 w-full items-center justify-center">
-                                        <input type="text" autofocus class="p-2 w-1/2 rounded-sm outline-none">
-                                        <button class="bg-white rounded-sm size-10">OK</button>
-                                    </div>
-                                    <p class="text-white font-footer_section_font">La réponse est en un seul mot.</p>
 
-                                </div>
-                            </div> -->
+            <section class="w-full select-none">
 
-                        <!-- <div class="flip-card-front absolute top-0 z-10 w-full h-full p-10">
-                                <div class="flex flex-col gap-8 items-center justify-center w-full h-full">
-                                    <div class="border-[10px] border-white w-[70%]">
-                                        <img src="../assets/images/enigme/chirac-profile.png" loading="lazy"
-                                            alt="Chirac Profile">
-                                    </div>
-                                    <div class="text-center text-white font-footer_section_font">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ex ab
-                                            rerum
-                                            exercitationem similique architecto laborum quia blanditiis aperiam harum
-                                            quo
-                                            unde
-                                            voluptas
-                                        </p>
-                                    </div>
-                                    <div class="flex gap-4 w-full items-center justify-center">
-                                        <input type="text" autofocus class="p-2 w-1/2 rounded-sm outline-none">
-                                        <button class="bg-white rounded-sm size-10">OK</button>
-                                    </div>
-                                    <p class="text-white font-footer_section_font">La réponse est en un seul mot.</p>
+                
+                <div class="relative w-full lg:w-[48%] xxl:w-[38%] mx-auto z-1 ">
+                    <div id="flip-card" class="flex">
+                        <div class="flip-card-inner">
 
-                                </div>
-                            </div> -->
-
-                        <div class="flip-card-front absolute top-0 z-10 w-full h-full p-10">
-                            <div class="flex flex-col gap-8 items-center justify-center w-full h-full">
-                                <div class="border-[10px] border-white w-full lg:w-[70%]">
-                                    <img src="../assets/images/enigme/chirac-profile.png" loading="lazy"
-                                        alt="Chirac Profile">
-                                </div>
-                                <div class="text-center text-white font-footer_section_font">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ex ab
-                                        rerum
-                                        exercitationem similique architecto laborum quia blanditiis aperiam harum
-                                        quo
-                                        unde
-                                        voluptas
-                                    </p>
-                                </div>
-                                <div class="flex gap-4 w-full items-center justify-center">
-                                    <input type="text" autofocus class="p-2 w-1/2 rounded-sm outline-none">
-                                    <button class="bg-white rounded-sm size-10">OK</button>
-                                </div>
-                                <p class="text-white font-footer_section_font">La réponse est en un seul mot.</p>
-
+                            <!-- COVER -->
+                            <div class="w-full relative z-10 hidden lg:block">
+                                <img class="w-full" loading="lazy" src="../assets/images/enigme/big-pochette.png"
+                                    alt="Cover" />
                             </div>
-                        </div>
+
+                            <!-- DISK underneath the cover -->
+                            <div
+                                class="hidden lg:block absolute size-[98%] z-0 top-1/2 left-[120px] -translate-y-1/2 flex justify-between items-center">
+                                <img class="w-full mx-auto" loading="lazy"
+                                    src="../assets/images/carousel/vinyl-disc.png" alt="Disk">
+                            </div>
 
 
+                            <!-- FRONT SIDE -->
 
+                            <div class="flip-card-front absolute top-0 z-10 w-full h-full p-10">
+                                <div class="flex flex-col gap-8 items-center justify-center w-full h-full">
+                                    <div class="border-[10px] border-white w-[70%]">
+                                        <img src="../assets/images/enigme/chirac-profile.png" loading="lazy"
+                                            alt="Chirac Profile">
+                                    </div>
+                                    <div class="text-center text-white font-footer_section_font">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ex ab
+                                            rerum
+                                            exercitationem similique architecto laborum quia blanditiis aperiam harum
+                                            quo
+                                            unde
+                                            voluptas
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-4 w-full items-center justify-center">
+                                        <input type="text" autofocus class="p-2 w-1/2 rounded-sm outline-none">
+                                        <button class="bg-white rounded-sm size-10">OK</button>
+                                    </div>
+                                    <p class="text-white font-footer_section_font">La réponse est en un seul mot.</p>
 
-                        <!-- BACK SIDE -->
+                                </div>
+                            </div>
 
-                        <!-- DESKTOP -->
-                        <!-- <div class="flip-card-back absolute top-0 z-10 w-full h-full p-10">
+    
+
+                            <!-- BACK SIDE -->
+                            <!-- DESKTOP -->
+                            <div class="flip-card-back absolute top-0 z-10 w-full h-full p-10">
                                 <div class="flex flex-col gap-8 items-center justify-center w-full h-full">
                                     <div class="border-[10px] border-white w-[70%]">
                                         <img src="../assets/images/enigme/rene-profile.png" loading="lazy"
@@ -214,33 +167,16 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
 
 
-                        <!-- MOBILE -->
-                        <!-- <div class="flip-card-back absolute top-0 z-10 w-full h-full p-10 bg-red-200">
-                                <div class="flex flex-col gap-8 items-center justify-center w-full h-full">
-                                    <div class="border-[10px] border-white w-[70%]">
-                                        <img src="../assets/images/enigme/rene-profile.png" loading="lazy" alt="Rene Profile">
-                                    </div>
-                                    <div class="text-center text-white font-footer_section_font">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ex ab
-                                            rerum
-                                            exercitationem similique architecto laborum quia blanditiis aperiam harum
-                                            quo
-                                            unde
-                                            voluptas
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> -->
+                        
 
+                        </div>
                     </div>
-                </div>
-        </section>
-    </div>
-</main>
+            </section>
+        </div>
+    </main>
 
 </body>
 </html>

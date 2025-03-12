@@ -1,5 +1,5 @@
 :root {
-  --flip-duration: 1.5s;
+  --flip-duration: .5s;
 }
 
 .flip-card {
