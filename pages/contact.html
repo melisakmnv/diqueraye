@@ -58,6 +58,10 @@
                             '100%': { boxShadow: '0 0 0 15px transparent' },
                         },
                     },
+                     dropShadow: {
+                        // USAGE : Footer Icons
+                        'glowWhite': '0 0 10px rgba(255, 255, 255, 0.7)',
+                    },
                 },
 
             }
@@ -158,30 +162,38 @@
 
     <footer
         class="flex items-center flex-col xl:flex-row-reverse xl:justify-between gap-4 text-zinc-300 text-sm md:text-base font-footer_section_font py-4 mb-4 md:mb-2">
+
+        <!-- SOCIAL ICONS -->
         <ul class="flex-1 flex justify-end gap-4">
-            <li>
-                <a href="#">
-                    <img class="size-6 lg:size-8" src="../assets/icons/icon_facebook.png" alt="Facebook Logo">
+            <li class="social-icon__container">
+                <a href="https://www.facebook.com/disquerayecom/">
+                    <img class="social-icon__image"
+                        src="../assets/icons/icon_facebook.png" alt="Facebook Logo">
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img class="size-6 lg:size-8" src="../assets/icons/icon_twitter.png" alt="Twitter Logo">
+            <li class="social-icon__container">
+                <a href="https://x.com/disqueraye">
+                    <img class="social-icon__image"
+                        src="../assets/icons/icon_twitter.png" alt="Twitter Logo">
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img class="size-6 lg:size-8" src="../assets/icons/icon_discord.png" alt="Discord Logo">
+            <li class="social-icon__container">
+                <a href="https://discord.com/invite/8hgz8yw">
+                    <img class="social-icon__image"
+                        src="../assets/icons/icon_discord.png" alt="Discord Logo">
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img class="size-6 lg:size-8" src="../assets/icons/icon_instagram.png" alt="Instagram Logo">
+            <li class="social-icon__container">
+                <a href="https://www.instagram.com/disque_raye">
+                    <img class="social-icon__image"
+                        src="../assets/icons/icon_instagram.png" alt="Instagram Logo">
                 </a>
             </li>
         </ul>
-        <p class="flex-2 text-center text-xs lg:text-sm uppercase">&copy; Copyright 2023 DisqueRaye.fr <br
-                class="md:hidden" /> | <span> <a class="text-gray-500" href="./policy.html">Mentions
+
+        <!-- COPYRIGHT -->
+        <p class="flex-2 copyright">&copy; Copyright 2023 DisqueRaye.fr <br
+                class="md:hidden" /> | <span> <a class="policy" href="./policy.html">Mentions
                     légales</a></span> | By Allen Shamal</p>
         <div class="hidden lg:block md:flex-1"></div>
     </footer>

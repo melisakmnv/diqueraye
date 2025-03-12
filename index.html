@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- STYLES -->
     <link rel="stylesheet" href="./styles/global.css">
 
-    <!-- FONTS -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anonymous+Pro&family=Roboto:wght@300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- TAILWIND CDN -->
-
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- TAILWIND CONFIG -->
     <script>
         tailwind.config = {
             theme: {
@@ -27,7 +26,8 @@
                     sm: "640px",
                     md: "768px",
                     lg: "960px",
-                    xl: "1280px"
+                    xl: "1280px",
+                    xxl: "1920px"
                 },
                 extend: {
                     fontFamily: {
@@ -37,7 +37,7 @@
                         game_section_font: ["Data_trash"],
                     },
                     fontSize: {
-                        // xxs: ['10px', '15px'],
+                        xxs: ['10px', '15px'],
                         xs: ['12px', '18px'],
                         sm: ['0.875rem', '22px'],
                         base: ['1rem', '1.5rem'],
@@ -52,12 +52,18 @@
                         'spin': 'spin 4s linear infinite',
                         'spin-slow': 'spin 1s linear',
                         'pulseShadow': 'pulseShadow 1s cubic-bezier(0.5, 0.5, 0, 1)',
+                        'pulseIcon': 'pulseIcon 1s cubic-bezier(0.5, 0.5, 0, 1)'
                     },
                     keyframes: {
                         pulseShadow: {
                             '0%': { boxShadow: '0 0 0 0 rgba(255, 255, 255, 0.4)' },
                             '100%': { boxShadow: '0 0 0 15px transparent' },
                         },
+                        
+                    },
+                    dropShadow: { 
+                        // USAGE : Footer Icons
+                        'glowWhite': '0 0 10px rgba(255, 255, 255, 0.7)',
                     },
                 },
 
@@ -65,13 +71,14 @@
         }
 
     </script>
-    <title>DisqueRaye</title>
 
+    <title>DisqueRaye</title>
 </head>
+
 <body class="flex flex-col min-h-screen max-w-screen px-8 md:px-16">
 
     <header class="flex items-center py-4 mb-10 md:py-6 md:mb-6 lg:mb-0">
-        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase text-zinc-300 ">
+        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase ">
             <div>
                 <a href="./index.html"
                     class="flex items-center gap-4 font-hero_section_font text-lg tracking-[0.125rem]">
@@ -81,7 +88,8 @@
                     <p>DisqueRaye.fr</p>
                 </a>
             </div>
-            <ul class="flex gap-8 font-medium text-base tracking-widest font-hero_section_font text-[#FFF] relative z-10">
+            <ul
+                class="flex gap-8 font-medium text-base tracking-widest font-hero_section_font text-[#FFF] relative z-10">
                 <li>
                     <a href="#" class="nav_menu nav_menu-active">
                         le jeu
@@ -107,7 +115,7 @@
             <div class="block h-[7vh] xl:hidden"></div>
             <div class="relative flex justify-center xl:block">
                 <h1
-                    class="relative z-10 font-hero_section_font text-2xl md:text-4xl text-zinc-300 text-center tracking-widest xl:tracking-[1px] xl:text-left">
+                    class="relative z-10 font-hero_section_font text-2xl md:text-4xl  text-center tracking-widest xl:tracking-[1px] xl:text-left">
                     Utilisez vos méninges <br />
                     <div id="typed-strings">
                         <span>Ne les rayez pas.</span>
@@ -122,14 +130,14 @@
             </div>
 
             <h2
-                class="font-hero_section_font text-base md:text-xl text-center text-zinc-300 tracking-widest xl:tracking-[1px] xl:text-left">
+                class="font-hero_section_font text-base md:text-xl text-center  tracking-widest xl:tracking-[1px] xl:text-left">
                 Un jeu, des <span class="inline-block -scale-x-[1]">énigmes</span> et de l'arrachage de cheveux<br> à
                 en devenir chauve
             </h2>
             <!-- MENU TOGGLE -->
             <input type="checkbox" id="menu-toggle" class="hidden peer">
             <label for="menu-toggle"
-                class="group relative cursor-pointer border-[3px] mx-auto rounded-lg px-16 py-3 font-hero_section_font text-zinc-300 text-md tracking-widest uppercase xl:ml-0 transition-all duration-300 hover:animate-pulseShadow hover:bg-[#ffffff15]">
+                class="group relative cursor-pointer border-[3px] mx-auto rounded-lg px-16 py-3 font-hero_section_font  text-md tracking-widest uppercase xl:ml-0 transition-all duration-300 hover:animate-pulseShadow hover:bg-[#ffffff15]">
                 Jouer
             </label>
 
@@ -150,7 +158,7 @@
                             <a href="./pages/enigme.html" class="game_menu">Nouvelle partie</a>
                         </li>
                         <li>
-                            <a href="./pages/enigme.html"  class="game_menu">Continuer</a>
+                            <a href="./pages/enigme.html" class="game_menu">Continuer</a>
                         </li>
                         <li>
                             <a href="" class="game_menu">Tutorial</a>
@@ -163,40 +171,49 @@
             <div class="hidden xl:block xl:h-[130px]"></div>
         </div>
         <div class="hidden xl:flex xl:flex-1 justify-end overflow-hidden">
-            <img src="./assets/images/home/home-vinyl.png" alt="Vinyl" class="xl:max-h-[70vh] overflow-hidden animate-spin">
+            <img src="./assets/images/home/home-vinyl.png" alt="Vinyl"
+                class="xl:max-h-[70vh] overflow-hidden animate-spin">
         </div>
     </main>
 
     <footer
-        class="flex items-center flex-col xl:flex-row-reverse xl:justify-between gap-4 text-zinc-300 text-sm md:text-base font-footer_section_font py-4 mb-4 md:mb-2">
+        class="flex items-center flex-col xl:flex-row-reverse xl:justify-between gap-4  text-sm md:text-base font-footer_section_font py-4 mb-4 md:mb-2">
+
+        <!-- SOCIAL ICONS -->
         <ul class="flex-1 flex justify-end gap-4">
-            <li>
-                <a href="#">
-                    <img class="size-6 lg:size-8" src="./assets/icons/icon_facebook.png" alt="Facebook Logo">
+            <li class="social-icon__container">
+                <a href="https://www.facebook.com/disquerayecom/">
+                    <img class="social-icon__image"
+                        src="./assets/icons/icon_facebook.png" alt="Facebook Logo">
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img class="size-6 lg:size-8" src="./assets/icons/icon_twitter.png" alt="Twitter Logo">
+            <li class="social-icon__container">
+                <a href="https://x.com/disqueraye">
+                    <img class="social-icon__image"
+                        src="./assets/icons/icon_twitter.png" alt="Twitter Logo">
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img class="size-6 lg:size-8" src="./assets/icons/icon_discord.png" alt="Discord Logo">
+            <li class="social-icon__container">
+                <a href="https://discord.com/invite/8hgz8yw">
+                    <img class="social-icon__image"
+                        src="./assets/icons/icon_discord.png" alt="Discord Logo">
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img class="size-6 lg:size-8" src="./assets/icons/icon_instagram.png" alt="Instagram Logo">
+            <li class="social-icon__container">
+                <a href="https://www.instagram.com/disque_raye">
+                    <img class="social-icon__image"
+                        src="./assets/icons/icon_instagram.png" alt="Instagram Logo">
                 </a>
             </li>
         </ul>
-        <p class="flex-2 text-center text-xs lg:text-sm uppercase">&copy; Copyright 2023 DisqueRaye.fr <br class="md:hidden" /> | <span> <a
-                    class="text-gray-500" href="./pages/policy.html">Mentions légales</a></span> | By Allen Shamal</p>
+
+        <!-- COPYRIGHT -->
+        <p class="flex-2 copyright">&copy; Copyright 2023 DisqueRaye.fr <br
+                class="md:hidden" /> | <span> <a class="policy" href="./pages/policy.html">Mentions légales</a></span> | By Allen Shamal</p>
         <div class="hidden lg:block md:flex-1"></div>
     </footer>
 
-   <script src="./js/logo-spin.js"></script>
-   <script src="./js/text-type.js"></script>
+    <script src="./js/logo-spin.js"></script>
+    <script src="./js/text-type.js"></script>
 </body>
 </html>
