@@ -3,9 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/enigme.css">
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anonymous+Pro&family=Roboto:wght@300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- TAILWIND CDN -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "640px",
+                    md: "768px",
+                    lg: "960px",
+                    xl: "1280px",
+                    xxl: "1920px"
+                },
+                extend: {
+                    fontFamily: {
+                        hero_section_font: ['Bebas Neue', 'serif'],
+                        nav_section_font: ['Raleway', 'serif'],
+                        footer_section_font: ["Anonymous Pro", "serif"],
+                        contact_input_section_font: ["Anonymous Pro", "serif"],
+                        game_section_font: ["Data_trash"],
+                    },
+                    fontSize: {
+                        // xxs: ['10px', '15px'],
+                        // xs: ['12px', '18px'],
+                        sm: ['0.875rem', '22px'],
+                        base: ['1rem', '1.5rem'],
+                        md: ['1.3rem', '32px'],
+                        lg: ['1.5rem', '2.25rem'],
+                        xl: ['1.7rem', '34px'],
+                        '2xl': ['2rem', '30px'],
+                        '4xl': ['6vw', '6vw']
+                    },
+
+                    animation: {
+                        'spin': 'spin 4s linear infinite',
+                        'spin-slow': 'spin 1s linear',
+                        'pulseShadow': 'pulseShadow 1s cubic-bezier(0.5, 0.5, 0, 1)',
+                    },
+                    keyframes: {
+                        pulseShadow: {
+                            '0%': { boxShadow: '0 0 0 0 rgba(255, 255, 255, 0.4)' },
+                            '100%': { boxShadow: '0 0 0 15px transparent' },
+                        },
+                    },
+                },
+
+            }
+        }
+
+    </script>
+    <title>Enigme</title>
+</head>
+
+
+<body class="flex flex-col min-h-screen max-w-screen ">
+    <header class="py-4 md:py-6 lg:py-2 md:px-16 mb-10 md:mb-6 lg:mb-0 flex items-center">
+        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase text-zinc-300 ">
+            <div>
+                <a href="../index.html"
+                    class="flex items-center gap-4 font-hero_section_font text-lg tracking-[0.125rem]">
+                    <div id="logo" class="w-[50px]">
+                        <img src="../assets/images/micro-logo.png" alt="Logo">
+                    </div>
+                    <p>DisqueRaye.fr</p>
+                </a>
+            </div>
+
+            <!-- LEVEL SECTION -->
+            <div class="font-game_section_font text-[clamp(2rem,_2.5vw,_3rem)]">
+                <h1>Niveau - 01</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main class="relative flex-grow w-full flex flex-col">
+        <div class="custom-background md:hidden">
+        </div>
+        <section class="flex flex-col gap-6 px-8 py-8 md:px-16 h-full">
+            <div class=" flex justify-between items-center gap-6">
+                <button id="flip-button" type="button" class="size-8 group">
+                    <img class="object-cover " src="../assets/icons/icon_question.png" alt="Hint">
+                </button>
+                <button id="save-button" type="button" class="size-8 group">
+                    <img class="object-cover " src="../assets/icons/icon_save.png" alt="Save">
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-6">
+                <div class="border-[10px] border-zinc-300 md:w-[70%]">
+                    <img src="../assets/images/enigme/chirac-profile.png" alt="">
+                </div>
+                <div class="text-center text-white font-footer_section_font">
+                    <p class="text-sm lg:text-base">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ex ab rerum exercitationem
+                        similique architecto
+                        laborum quia blanditiis aperiam harum quo unde voluptas
+                    </p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-4 w-full items-center justify-center">
+                    <input type="text" autofocus class="p-2 w-full rounded-sm outline-none">
+                    <button class="bg-white rounded-sm size-10 w-1/2">OK</button>
+                </div>
+                <p class="text-white font-footer_section_font text-center">La réponse est en un seul mot.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="flex items-center flex-col xl:flex-row-reverse xl:justify-between gap-4 text-zinc-300 text-sm md:text-base font-footer_section_font py-4 mb-4 md:mb-2 mt-10 lg:mb-0 lg:mt-0">
+        <ul class="flex-1 flex justify-end gap-4">
+            <li>
+                <a href="#">
+                    <img class="size-6 lg:size-8" src="../assets/icons/icon_facebook.png" alt="Facebook Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="size-6 lg:size-8" src="../assets/icons/icon_twitter.png" alt="Twitter Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="size-6 lg:size-8" src="../assets/icons/icon_discord.png" alt="Discord Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="size-6 lg:size-8" src="../assets/icons/icon_instagram.png" alt="Instagram Logo">
+                </a>
+            </li>
+        </ul>
+        <p class="flex-2 text-center text-xs lg:text-sm uppercase">&copy; Copyright 2023
+            DisqueRaye.fr <br class="md:hidden" /> | <span> <a class="text-gray-500" href="./policy.html">Mentions
+                    légales</a></span> | By Allen Shamal</p>
+        <div class="hidden lg:block md:flex-1"></div>
+    </footer>
+
+    <script src="../js/logo-spin.js"></script>
+    <script src="../js/enigme.js"></script>
 </body>
 </html>

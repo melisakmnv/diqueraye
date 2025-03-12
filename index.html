@@ -34,7 +34,7 @@
                         hero_section_font: ['Bebas Neue', 'serif'],
                         nav_section_font: ['Raleway', 'serif'],
                         footer_section_font: ["Anonymous Pro", "serif"],
-                        game_section_font: "",
+                        game_section_font: ["Data_trash"],
                     },
                     fontSize: {
                         // xxs: ['10px', '15px'],
@@ -83,7 +83,7 @@
             </div>
             <ul class="flex gap-8 font-medium text-base tracking-widest font-hero_section_font text-[#FFF] relative z-10">
                 <li>
-                    <a href="#" class="nav_menu">
+                    <a href="#" class="nav_menu nav_menu-active">
                         le jeu
                     </a>
                 </li>
@@ -145,12 +145,12 @@
                         </label>
                     </div>
 
-                    <ul class="uppercase text-white text-4xl p-[4vh] flex flex-col gap-4">
+                    <ul class="uppercase text-white text-4xl p-[4vh] flex flex-col gap-4 font-game_section_font">
                         <li>
-                            <a href="" class="game_menu">Nouvelle partie</a>
+                            <a href="./pages/enigme.html" class="game_menu">Nouvelle partie</a>
                         </li>
                         <li>
-                            <a href="" class="game_menu">Continuer</a>
+                            <a href="./pages/enigme.html"  class="game_menu">Continuer</a>
                         </li>
                         <li>
                             <a href="" class="game_menu">Tutorial</a>

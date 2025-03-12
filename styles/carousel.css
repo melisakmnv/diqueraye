@@ -81,8 +81,8 @@ body {
   }
 
   .card__article:not(.swiper-slide-active) .card__article--header {
-  bottom: 100px;
-}
+    bottom: 100px;
+  }
 }
 
 
