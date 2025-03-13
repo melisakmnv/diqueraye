@@ -70,7 +70,33 @@ body {
   }
 }
 
-/* NAVIGATION */
+/*  ====================================== */
+/*  ============= NAVIGATION ============= */
+/*  ====================================== */
+
+.header-margin {
+  margin-bottom: 2.5em; 
+}
+
+/* mb-10 md:mb-6 lg:mb-0 */
+
+@media (min-width: 768px) {
+  .header-margin {
+    margin-bottom : 1.5em;
+  }
+}
+
+@media (min-width: 960px) {
+  .header-margin {
+    margin-bottom : 0;
+  }
+}
+
+
+
+
+
+
 .nav_menu {
   position: relative;
 }
@@ -147,15 +173,6 @@ body {
 /*  =============== FOOTER =============== */
 /*  ====================================== */
 
-.footer-margin {
-  margin-bottom: 1em;
-}
-
-@media (min-width: 768px) {
-  .footer-margin {
-    margin-bottom: 0.5em;
-  }
-}
 
 .footer-font {
   font-family: var(--footer-font);

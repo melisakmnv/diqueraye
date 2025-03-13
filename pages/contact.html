@@ -25,7 +25,8 @@
                     sm: "640px",
                     md: "768px",
                     lg: "960px",
-                    xl: "1280px"
+                    xl: "1280px",
+                    xxl: "1920px"
                 },
                 extend: {
                     fontFamily: {
@@ -72,7 +73,7 @@
 </head>
 
 <body class="flex flex-col min-h-screen max-w-screen">
-    <header class="flex items-center py-4 mb-10 md:py-6 md:mb-6 lg:mb-0">
+    <header class="padding-layout header-margin flex items-center">
         <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase text-zinc-300 ">
             <div>
                 <a href="../index.html"
@@ -160,35 +161,39 @@
 
     </main>
 
-    <footer class="footer-font padding-layout footer-margin flex flex-col xl:flex-row-reverse items-center xl:justify-between gap-4 
+    <footer class="footer-font padding-layout flex flex-col xl:flex-row-reverse items-center xl:justify-between gap-4 
     ">
         <!-- SOCIAL ICONS -->
         <ul class="flex-1 flex justify-end gap-4">
             <li class="social-icon__container">
                 <a href="https://www.facebook.com/disquerayecom/">
-                    <img class="social-icon__image" src="../assets/icons/icon_facebook.png" alt="Facebook Logo">
+                    <img class="social-icon__image" src="../assets/icons/icon_facebook.png" alt="Facebook Logo"
+                        loading="lazy">
                 </a>
             </li>
             <li class="social-icon__container">
                 <a href="https://x.com/disqueraye">
-                    <img class="social-icon__image" src="../assets/icons/icon_twitter.png" alt="Twitter Logo">
+                    <img class="social-icon__image" src="../assets/icons/icon_twitter.png" alt="Twitter Logo"
+                        loading="lazy">
                 </a>
             </li>
             <li class="social-icon__container">
                 <a href="https://discord.com/invite/8hgz8yw">
-                    <img class="social-icon__image" src="../assets/icons/icon_discord.png" alt="Discord Logo">
+                    <img class="social-icon__image" src="../assets/icons/icon_discord.png" alt="Discord Logo"
+                        loading="lazy">
                 </a>
             </li>
             <li class="social-icon__container">
                 <a href="https://www.instagram.com/disque_raye">
-                    <img class="social-icon__image" src="../assets/icons/icon_instagram.png" alt="Instagram Logo">
+                    <img class="social-icon__image" src="../assets/icons/icon_instagram.png" alt="Instagram Logo"
+                        loading="lazy">
                 </a>
             </li>
         </ul>
-    
+
         <!-- COPYRIGHT -->
-        <p class="flex-2 copyright">&copy; Copyright 2023 DisqueRaye.fr <br class="md:hidden" /> | <span> <a class="policy"
-                    href="./pages/policy.html">Mentions légales</a></span> | By Allen Shamal</p>
+        <p class="flex-2 copyright">&copy; Copyright 2023 DisqueRaye.fr <br class="md:hidden" /> | <span> <a
+                    class="policy" href="./pages/policy.html">Mentions légales</a></span> | By Allen Shamal</p>
         <div class="hidden lg:block md:flex-1"></div>
     </footer>
 
