@@ -17,6 +17,7 @@
 
   /* COLOR */
   --font-color: #d4d4d8;
+  --nav-menu-color: #ffffff;
   --policy-color: #6b7280;
   --background-color: #363636;
 
@@ -24,9 +25,20 @@
   --font-size-xxs: 0.625rem;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.874rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.5rem;
+
+  /* FONT WEIGHT */
+  --font-medium: 500;
 
   /* FONT FAMILY */
+  --header-font: "Bebas Neue", "serif";
   --footer-font: "Anonymous Pro", "serif";
+
+  /* LETTER SPACING */
+  --tracking-wide: 0.05rem;
+  --tracking-wider: 0.1rem;
+  --tracking-widest: 0.125rem;
 
   /* FOOTER */
   --footer-icon-size: 1.5rem;
@@ -71,63 +83,76 @@ body {
 }
 
 /*  ====================================== */
-/*  ============= NAVIGATION ============= */
+/*  =============== HEADER =============== */
 /*  ====================================== */
 
 .header-margin {
-  margin-bottom: 2.5em; 
+  margin-bottom: 2.5em;
 }
-
-/* mb-10 md:mb-6 lg:mb-0 */
 
 @media (min-width: 768px) {
   .header-margin {
-    margin-bottom : 1.5em;
+    margin-bottom: 1.5em;
   }
 }
 
 @media (min-width: 960px) {
   .header-margin {
-    margin-bottom : 0;
+    margin-bottom: 0;
   }
 }
 
+.header-font {
+  font-family: var(--header-font);
+}
 
+/* LOGO */
 
+.logo__wrapper {
+  font-size: var(--font-size-lg);
+  letter-spacing: var(--tracking-widest);
+}
 
+/* NAVIGATION */
 
+.nav-menu {
+  color: var(--nav-menu-color);
+  letter-spacing: var(--tracking-wider);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-medium);
+}
 
-.nav_menu {
+.nav-menu__item {
   position: relative;
 }
 
-.nav_menu::after {
+.nav-menu__item::after {
   content: "";
   position: absolute;
   height: 2px;
   left: 0;
   bottom: -4px;
   width: 0;
-  background: #fff;
+  background: var(--nav-menu-color);
   transition: width 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
 }
 
-.nav_menu:hover::after {
+.nav-menu__item:hover::after {
   width: 100%;
 }
 
-.nav_menu-active::after {
+.nav-menu__item-active::after {
   content: "";
   position: absolute;
   height: 2px;
   left: 0;
   bottom: -4px;
   width: 100%;
-  background: #fff;
+  background: var(--nav-menu-color);
 }
 
 /*  ====================================== */
-/*  ============== GAME MENU ============= */
+/*  ============= MAIN SECTION =========== */
 /*  ====================================== */
 
 .game_menu {
@@ -172,7 +197,6 @@ body {
 /*  ====================================== */
 /*  =============== FOOTER =============== */
 /*  ====================================== */
-
 
 .footer-font {
   font-family: var(--footer-font);

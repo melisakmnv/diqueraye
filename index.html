@@ -77,11 +77,11 @@
 
 <body class="flex flex-col min-h-screen max-w-screen">
 
-    <header class="padding-layout header-margin flex items-center">
-        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase ">
-            <div>
+    <header class="padding-layout header-margin header-font flex items-center">
+        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4 uppercase">
+            <div class="logo__wrapper">
                 <a href="./index.html"
-                    class="flex items-center gap-4 font-hero_section_font text-lg tracking-[0.125rem]">
+                    class="flex items-center gap-4">
                     <div id="logo" class="w-[50px]">
                         <img src="./assets/images/micro-logo.png" alt="Logo">
                     </div>
@@ -89,26 +89,27 @@
                 </a>
             </div>
             <ul
-                class="flex gap-8 font-medium text-base tracking-widest font-hero_section_font text-[#FFF] relative z-10">
+                class="nav-menu flex gap-8">
                 <li>
-                    <a href="#" class="nav_menu nav_menu-active">
+                    <a href="#" class="nav-menu__item nav-menu__item-active">
                         le jeu
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/carousel.html" class="nav_menu z-10">
+                    <a href="./pages/carousel.html" class="nav-menu__item">
                         boîtes à son
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/contact.html" class="nav_menu">
+                    <a href="./pages/contact.html" class="nav-menu__item">
                         contact
                     </a>
                 </li>
-
             </ul>
         </nav>
     </header>
+
+
     <main class="padding-layout relative flex-grow flex items-center justify-center">
 
         <div class="xl:flex-1 h-full flex flex-col relative z-5 gap-[3vh] md:gap-[5vh] xl:flex-1 lg:mt-10 xl:gap-8">

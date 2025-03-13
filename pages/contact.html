@@ -73,34 +73,33 @@
 </head>
 
 <body class="flex flex-col min-h-screen max-w-screen">
-    <header class="padding-layout header-margin flex items-center">
-        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase text-zinc-300 ">
-            <div>
-                <a href="../index.html"
-                    class="flex items-center gap-4 font-hero_section_font text-lg tracking-[0.125rem]">
+
+    <header class="padding-layout header-margin header-font flex items-center">
+        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4 uppercase">
+            <div class="logo__wrapper">
+                <a href="../index.html" class="flex items-center gap-4">
                     <div id="logo" class="w-[50px]">
                         <img src="../assets/images/micro-logo.png" alt="Logo">
                     </div>
                     <p>DisqueRaye.fr</p>
                 </a>
             </div>
-            <ul class="flex gap-8 font-medium text-base tracking-widest font-hero_section_font text-[#FFF]">
-                <li class="">
-                    <a href="#" class="nav_menu">
+            <ul class="nav-menu flex gap-8">
+                <li>
+                    <a href="../index.html" class="nav-menu__item">
                         le jeu
                     </a>
                 </li>
-                <li class="">
-                    <a href="../pages/carousel.html" class="nav_menu">
+                <li>
+                    <a href="./carousel.html" class="nav-menu__item">
                         boîtes à son
                     </a>
                 </li>
-                <li class="">
-                    <a href="#" class="nav_menu nav_menu-active">
+                <li>
+                    <a href="#" class="nav-menu__item nav-menu__item-active">
                         contact
                     </a>
                 </li>
-
             </ul>
         </nav>
     </header>

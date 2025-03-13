@@ -70,13 +70,13 @@
     <title>Enigme</title>
 </head>
 
+<body class="flex flex-col min-h-screen max-w-screen">
 
-<body class="flex flex-col min-h-screen max-w-screen ">
-    <header class="padding-layout header-margin flex items-center">
-        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4  uppercase text-zinc-300 ">
-            <div>
-                <a href="../index.html"
-                    class="flex items-center gap-4 font-hero_section_font text-lg tracking-[0.125rem]">
+    <header class="padding-layout header-margin header-font flex items-center">
+        <nav class="w-full flex flex-col md:flex-row items-center justify-between gap-4 uppercase">
+
+            <div class="logo__wrapper">
+                <a href="./index.html" class="flex items-center gap-4">
                     <div id="logo" class="w-[50px]">
                         <img src="../assets/images/micro-logo.png" alt="Logo">
                     </div>
@@ -85,8 +85,9 @@
             </div>
 
             <!-- LEVEL SECTION -->
-            <div class="font-game_section_font text-[clamp(2rem,_2.5vw,_3rem)]">
-                <h1>Niveau - 01</h1>
+            <!--  text-[clamp(1rem,_1.6vw,_2rem)] -->
+            <div class="font-game_section_font text-2xl">
+                <h2>Niveau - 01</h2>
             </div>
         </nav>
     </header>
