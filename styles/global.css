@@ -68,6 +68,16 @@ body {
   user-select: none;
 }
 
+select {
+    padding-right: 60px; /* Ajoute un espace pour l'icône */
+    cursor: pointer;
+}
+
+select option:first-child {
+    color: gray;
+    font-style: italic;
+}
+
 /* CUSTOM STYLE */
 
 /* LAYOUT */
