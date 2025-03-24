@@ -11,6 +11,8 @@ FLIP_BUTTON.addEventListener('click', function () {
 });
 
 
-SAVE_BUTTON.addEventListener('click', function () {
-    alert("Vous pouvez sauvegarder votre partie :)");
-})
+document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+        alert("N'oubliez pas de sauvegarder votre partie avant de");
+    }
+});
