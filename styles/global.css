@@ -204,6 +204,10 @@ select option:first-child {
   transition: 0s;
 }
 
+.game_icon {
+      transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
 /*  ====================================== */
 /*  =============== FOOTER =============== */
 /*  ====================================== */
